@@ -1,163 +1,58 @@
 import config from "@/config";
 
 export default {
-  bigStat: [
-    {
-      product: "Light Blue",
-      total: "4,232",
-      color: "primary",
-      registrations: {
-        value: 830,
-        profit: true,
-      },
-      bounce: {
-        value: 4.5,
-        profit: false,
-      },
-    },
-    {
-      product: "Sing App",
-      total: "754",
-      color: "danger",
-      registrations: {
-        value: 30,
-        profit: true,
-      },
-      bounce: {
-        value: 2.5,
-        profit: true,
-      },
-    },
-    {
-      product: "RNS",
-      total: "1,025",
-      color: "info",
-      registrations: {
-        value: 230,
-        profit: true,
-      },
-      bounce: {
-        value: 21.5,
-        profit: false,
-      },
-    },
-  ],
   trend: {
     gradient: [config.light.success],
   },
   table: [
     {
       id: 0,
-      name: "VIVO",
-      type: "GSM",
-      interface: "b0c0-1",
-      sinal: "65%",
-      status: "Sent",
+      name: "Hostname",
+      type: "pabx.itflex.lan",
     },
     {
       id: 1,
-      name: "VOXIP",
-      type: "SIP",
-      interface: "10.10.10.10:5060",
-      sinal: "58 ms",
-      status: "Sent",
+      name: "Hardware vendor",
+      type: "Red Hat",
     },
     {
       id: 3,
-      name: "Embratel",
-      type: "SIP",
-      interface: "10.20.20.20:5060",
-      sinal: "75 ms",
-      status: "Declined",
+      name: "Hardware model",
+      type: "KVM",
+    },
+    {
+      id: 0,
+      name: "CPU Brand",
+      type: "Intel Core Processor (Haswell, IBRS)",
+    },
+    {
+      id: 1,
+      name: "CPU Cores",
+      type: "4",
+    },
+    {
+      id: 3,
+      name: "Memory (Used/Total)",
+      type: "775M / 2.0G",
+    },
+    {
+      id: 0,
+      name: "Swap (Used/Total)",
+      type: "74M / 4.0G",
+    },
+    {
+      id: 1,
+      name: "Distribution",
+      type: "CentOS release 6.10 (Final)",
+    },
+    {
+      id: 3,
+      name: "Kernel",
+      type: "2.6.32-754.35.1.el6.centos.plus.x86_64",
     },
   ],
   select: ["Diário", "Semanal", "Mensal"],
-  apexPie: {
-    options: {
-      dataLabels: {
-        enabled: false,
-      },
-      colors: [
-        config.light.primary,
-        config.light.secondary,
-        config.light.success,
-        config.light.warning,
-      ],
-      labels: ["Comercial", "RH", "Suporte", "Outros Assuntos"],
-      legend: {},
-    },
-    series: [400, 300, 300, 200],
-  },
-  apexArea1: {
-    options: {
-      chart: {
-        id: "apexAreaFirst",
-        sparkline: {
-          enabled: true,
-        },
-      },
-      colors: [config.light.secondary],
-      fill: {
-        type: "solid",
-        opacity: 0.3,
-      },
-      stroke: {
-        width: 2,
-        curve: "smooth",
-      },
-    },
-    series: [
-      {
-        data: [50, 56, 52, 51, 52, 55, 53],
-      },
-    ],
-  },
-  apexArea2: {
-    options: {
-      chart: {
-        sparkline: {
-          enabled: true,
-        },
-      },
-      colors: [config.light.primary],
-      fill: {
-        type: "solid",
-        opacity: 0.3,
-      },
-      stroke: {
-        width: 2,
-        curve: "smooth",
-      },
-    },
-    series: [
-      {
-        data: [55, 56, 52, 51, 52, 55, 53],
-      },
-    ],
-  },
-  apexArea3: {
-    options: {
-      chart: {
-        sparkline: {
-          enabled: true,
-        },
-      },
-      colors: [config.light.warning],
-      fill: {
-        type: "solid",
-        opacity: 0.3,
-      },
-      stroke: {
-        width: 2,
-        curve: "smooth",
-      },
-    },
-    series: [
-      {
-        data: [55, 56, 52, 51, 52, 55, 53],
-      },
-    ],
-  },
+
   mainApexArea: {
     options: {
       chart: {

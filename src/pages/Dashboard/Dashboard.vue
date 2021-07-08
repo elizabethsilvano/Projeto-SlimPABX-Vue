@@ -2,13 +2,13 @@
   <v-container fluid>
     <div class="dashboard-page">
       <v-row no-gutters class="d-flex justify-space-between mt-10 mb-6">
-        <h1 class="page-title">Home</h1>
+        <h1 class="page-title">Dashboard</h1>
       </v-row>
       <v-row>
         <v-col lg="4" sm="4" md="4" cols="12">
-          <v-card class="mx-1 mb-1">
-            <v-card-title class="pa-6 pb-3">
-              <p>Ligações de hoje</p>
+          <v-card class="mx-1 mb-1" style="height: 250px">
+            <v-card-title class="flex-nowrap pa-6 pb-3">
+              <p>Chamadas</p>
               <v-spacer></v-spacer>
             </v-card-title>
             <v-card-text class="pa-6 pt-0">
@@ -86,9 +86,7 @@
             <v-card-text class="pa-6 pt-0">
               <v-row no-gutters>
                 <v-col cols="7" class="my-auto">
-                  <span class="" style="font-size: 42px"
-                    >121 <span class="error--text caption">-3.2%</span>
-                  </span>
+                  <span class="" style="font-size: 42px">121 </span>
                 </v-col>
                 <v-col cols="5">
                   <ApexChart
@@ -197,8 +195,8 @@
           </v-card>
         </v-col>
         <v-col lg="4" sm="4" md="4" cols="12">
-          <v-card class="mx-1 mb-1">
-            <v-card-title class="pa-6 pb-3">
+          <v-card class="mx-1 mb-1" style="height: 250px">
+            <v-card-title class="flex-nowrap pa-6 pb-3">
               <p>Uso de hardware</p>
               <v-spacer></v-spacer>
             </v-card-title>
@@ -263,17 +261,15 @@
           </v-card>
         </v-col>
         <v-col lg="4" sm="4" md="4" cols="12">
-          <v-card class="mx-1 mb-1">
-            <v-card-title class="pa-6 pb-3">
+          <v-card class="mx-1 mb-1" style="height: 250px">
+            <v-card-title class="flex-nowrap pa-6 pb-3">
               <p>Carga do Sistema</p>
               <v-spacer></v-spacer>
             </v-card-title>
             <v-card-text class="pa-6 pt-0">
               <v-row no-gutters>
                 <v-col cols="7" class="my-auto">
-                  <span class="" style="font-size: 42px"
-                    >0.56 <span class="error--text caption">-3.2%</span>
-                  </span>
+                  <span class="" style="font-size: 42px">0.56 </span>
                 </v-col>
                 <v-col cols="5">
                   <ApexChart
@@ -309,17 +305,15 @@
           </v-card>
         </v-col>
         <v-col lg="4" sm="4" md="4" cols="12">
-          <v-card class="mx-1 mb-1">
-            <v-card-title class="pa-6 pb-3">
-              <p>RNS</p>
+          <v-card class="mx-1 mb-1" style="height: 250px">
+            <v-card-title class="flex-nowrap pa-6 pb-3">
+              <p>Uso do Disco</p>
               <v-spacer></v-spacer>
             </v-card-title>
             <v-card-text class="pa-6 pt-0">
               <v-row no-gutters>
                 <v-col cols="7" class="my-auto">
-                  <span class="" style="font-size: 42px"
-                    >175 <span class="error--text caption">-3.1%</span>
-                  </span>
+                  <span class="" style="font-size: 42px">Boot / </span>
                 </v-col>
                 <v-col cols="5">
                   <ApexChart
@@ -334,21 +328,21 @@
               <v-row no-gutters class="justify-space-between">
                 <div>
                   <div class="subtext">
-                    31 <v-icon color="error"> mdi-arrow-bottom-right</v-icon>
+                    ext4
                   </div>
-                  <div class="subtext-index">Registrations</div>
+                  <div class="subtext-index">Filesystem</div>
                 </div>
                 <div>
                   <div class="subtext">
-                    3.23%<v-icon color="success"> mdi-arrow-top-right</v-icon>
+                    265MB/ 999MB
                   </div>
-                  <div class="subtext-index">Bounce Rate</div>
+                  <div class="subtext-index">Espaço</div>
                 </div>
                 <div>
                   <div class="subtext">
-                    301<v-icon color="success"> mdi-arrow-top-right</v-icon>
+                    0.4KB/ 65.5KB
                   </div>
-                  <div class="subtext-index">Views</div>
+                  <div class="subtext-index">inode</div>
                 </div>
               </v-row>
             </v-card-text>
@@ -385,7 +379,7 @@
                       </td>
                       <td v-else-if="item.status === 'Declined'">
                         <v-chip link color="error" class="ma-2 ml-0">
-                          Down
+                          X
                         </v-chip>
                       </td>
                     </tr>

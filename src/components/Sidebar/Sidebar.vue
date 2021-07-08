@@ -38,7 +38,7 @@
           append-icon=""
         >
           <template v-slot:prependIcon>
-            <v-icon size="28">mdi-image-filter-none</v-icon>
+            <v-icon size="28">{{ item.icon }}</v-icon>
           </template>
           <template v-slot:activator>
             <v-list-item-content>
@@ -97,52 +97,146 @@ export default {
   data() {
     return {
       items: [
-        { title: "Home", icon: "mdi-home", link: "/dashboard" },
-        { title: "Relatórios", icon: "mdi-format-size", link: "/typography" },
-        { title: "Ramais", icon: "mdi-grid-large", link: "/tables" },
+        { title: "Dashboard", icon: "mdi-home", link: "/dashboard" },
         {
-          title: "Gerenciamento",
-          icon: "mdi-image-filter-none",
-          link: "/icons",
-          model: false,
+          title: "Relatórios",
+          icon: "mdi-book-variant-multiple",
+          link: "/typography",
           children: [
-            { title: "Gravações", icon: "mdi-circle-small", link: "/icons" },
+            { title: "Tarifação", link: "/icons" },
             {
-              title: "Equipamentos",
-              icon: "mdi-circle-small",
+              title: "Registros de chamadas",
               link: "/charts",
             },
             {
-              title: "Bloqueio de chamadas",
-              icon: "mdi-circle-small",
+              title: "Relatório de URA",
               link: "/maps",
             },
           ],
         },
         {
-          title: "Links",
-          icon: "mdi-image-filter-none",
+          title: "Gerenciamento",
+          icon: "mdi-grid-large",
+          model: false,
+          children: [
+            { title: "Gravações", link: "/icons" },
+            {
+              title: "Ramais",
+              link: "/tables",
+            },
+            {
+              title: "Agenda de Discagem",
+              link: "/maps",
+            },
+            {
+              title: "Filas",
+              link: "/maps",
+            },
+            {
+              title: "Salas de Conferência",
+              link: "/maps",
+            },
+          ],
+        },
+        {
+          title: "Usuários",
+          icon: "mdi-vector-combine",
           link: "/icons",
           model: false,
           children: [
-            { title: "Icons", icon: "mdi-circle-small", link: "/icons" },
-            { title: "Charts", icon: "mdi-circle-small", link: "/charts" },
-            { title: "Maps", icon: "mdi-circle-small", link: "/maps" },
+            {
+              title: "Usuários do Sistema",
+              link: "/icons",
+            },
+            {
+              title: "Grupos e Usuários",
+              link: "/charts",
+            },
+            {
+              title: "Permissões",
+              link: "/maps",
+            },
           ],
         },
         { divider: true },
-        { heading: "HELP" },
-        { title: "Library", icon: "mdi-book-variant-multiple" },
-        { title: "Support", icon: "mdi-forum" },
-        { title: "FAQ", icon: "mdi-help-circle-outline" },
+        { heading: "Configurações" },
+        {
+          title: "Configurações Avançadas",
+          icon: "mdi-vector-combine",
+          model: false,
+          children: [
+            {
+              title: "Ramais Monitorados BLF",
+              link: "/icons",
+            },
+            {
+              title: "Encerrar Conexões de Ramal",
+              link: "/charts",
+            },
+            {
+              title: "Plano de Discagem",
+              link: "/maps",
+            },
+            {
+              title: "Entrocamentos - IAX2",
+              link: "/maps",
+            },
+            {
+              title: "Entrocamentos - Agenda",
+              link: "/maps",
+            },
+          ],
+        },
+        {
+          title: "Configurações do PABX",
+          icon: "mdi-forum",
+          model: false,
+          children: [
+            { title: "Gravações", link: "/icons" },
+            {
+              title: "Equipamentos",
+              link: "/charts",
+            },
+            {
+              title: "Bloqueio de chamadas",
+              link: "/maps",
+            },
+          ],
+        },
         { divider: true },
-        { heading: "PROJECTS" },
-        { title: "My recent", icon: "mdi-circle-medium", color: "warning" },
-        { title: "Starred", icon: "mdi-circle-medium", color: "primary" },
-        { title: "Background", icon: "mdi-circle-medium", color: "error" },
+        { heading: "Sistema" },
+        {
+          title: "Links de Voz",
+          icon: "mdi-access-point-network",
+          color: "green",
+          link: "/Links",
+        },
+        {
+          title: "Histórico do Sistema",
+          icon: " mdi-vector-difference",
+          color: "warning",
+        },
+        {
+          title: "Status do Sistema",
+          icon: "mdi-check",
+          color: "primary",
+          link: "/Status",
+        },
+        {
+          title: "Gráficos do Sistema",
+          icon: "mdi-vector-polyline",
+          color: "pink",
+          link: "/Charts",
+        },
+        {
+          title: "Informações do servidor",
+          icon: "mdi-information-outline",
+          color: "blue",
+          link: "/Informacoes",
+        },
       ],
-      sidebarWidth: 240,
-      sidebarMinWidth: 96,
+      sidebarWidth: 310,
+      sidebarMinWidth: 150,
     };
   },
   computed: {

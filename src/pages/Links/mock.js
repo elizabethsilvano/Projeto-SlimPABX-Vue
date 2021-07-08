@@ -1,47 +1,6 @@
 import config from "@/config";
 
 export default {
-  bigStat: [
-    {
-      product: "Light Blue",
-      total: "4,232",
-      color: "primary",
-      registrations: {
-        value: 830,
-        profit: true,
-      },
-      bounce: {
-        value: 4.5,
-        profit: false,
-      },
-    },
-    {
-      product: "Sing App",
-      total: "754",
-      color: "danger",
-      registrations: {
-        value: 30,
-        profit: true,
-      },
-      bounce: {
-        value: 2.5,
-        profit: true,
-      },
-    },
-    {
-      product: "RNS",
-      total: "1,025",
-      color: "info",
-      registrations: {
-        value: 230,
-        profit: true,
-      },
-      bounce: {
-        value: 21.5,
-        profit: false,
-      },
-    },
-  ],
   trend: {
     gradient: [config.light.success],
   },
@@ -72,92 +31,7 @@ export default {
     },
   ],
   select: ["Diário", "Semanal", "Mensal"],
-  apexPie: {
-    options: {
-      dataLabels: {
-        enabled: false,
-      },
-      colors: [
-        config.light.primary,
-        config.light.secondary,
-        config.light.success,
-        config.light.warning,
-      ],
-      labels: ["Comercial", "RH", "Suporte", "Outros Assuntos"],
-      legend: {},
-    },
-    series: [400, 300, 300, 200],
-  },
-  apexArea1: {
-    options: {
-      chart: {
-        id: "apexAreaFirst",
-        sparkline: {
-          enabled: true,
-        },
-      },
-      colors: [config.light.secondary],
-      fill: {
-        type: "solid",
-        opacity: 0.3,
-      },
-      stroke: {
-        width: 2,
-        curve: "smooth",
-      },
-    },
-    series: [
-      {
-        data: [50, 56, 52, 51, 52, 55, 53],
-      },
-    ],
-  },
-  apexArea2: {
-    options: {
-      chart: {
-        sparkline: {
-          enabled: true,
-        },
-      },
-      colors: [config.light.primary],
-      fill: {
-        type: "solid",
-        opacity: 0.3,
-      },
-      stroke: {
-        width: 2,
-        curve: "smooth",
-      },
-    },
-    series: [
-      {
-        data: [55, 56, 52, 51, 52, 55, 53],
-      },
-    ],
-  },
-  apexArea3: {
-    options: {
-      chart: {
-        sparkline: {
-          enabled: true,
-        },
-      },
-      colors: [config.light.warning],
-      fill: {
-        type: "solid",
-        opacity: 0.3,
-      },
-      stroke: {
-        width: 2,
-        curve: "smooth",
-      },
-    },
-    series: [
-      {
-        data: [55, 56, 52, 51, 52, 55, 53],
-      },
-    ],
-  },
+
   mainApexArea: {
     options: {
       chart: {
