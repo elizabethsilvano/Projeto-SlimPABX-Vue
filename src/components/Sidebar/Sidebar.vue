@@ -140,7 +140,7 @@ export default {
         },
         {
           title: "Usuários",
-          icon: "mdi-vector-combine",
+          icon: "mdi-account-convert",
           link: "/icons",
           model: false,
           children: [
@@ -189,7 +189,7 @@ export default {
         },
         {
           title: "Configurações do PABX",
-          icon: "mdi-forum",
+          icon: "mdi-vector-square",
           model: false,
           children: [
             { title: "Gravações", link: "/icons" },

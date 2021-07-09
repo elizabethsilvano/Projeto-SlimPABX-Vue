@@ -8,7 +8,7 @@
         <v-col cols="8">
           <div class="card">
             <p class="error-text">
-              Ops. Parece que a página que você está procurando não existe mais
+              Ops. Página indisponível no momento.
             </p>
             <v-btn dark x-large :color="config.light.primary" to="dashboard">
               Voltar para o início

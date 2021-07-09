@@ -40,45 +40,12 @@
 import mock from "./mock";
 
 export default {
-  name: "Dashboard",
+  name: "Informacoes",
   components: {},
   data() {
     return {
       mock,
-      apexLoading: false,
-      value: this.getRandomInt(10, 90),
-      value2: this.getRandomInt(10, 90),
-      mainApexAreaSelect: "Diário",
     };
-  },
-  methods: {
-    getRandomDataForTrends() {
-      const arr = [];
-      for (let i = 0; i < 12; i += 1) {
-        arr.push(Math.random().toFixed(1) * 10);
-      }
-      return arr;
-    },
-    generatePieSeries() {
-      let series = [];
-
-      for (let i = 0; i < 4; i++) {
-        let y = Math.floor(Math.random() * (500 - 100 + 100)) + 100;
-        series.push(y);
-      }
-      return series;
-    },
-    getRandomInt(min, max) {
-      let rand = min - 0.5 + Math.random() * (max - min + 1);
-      return Math.round(rand);
-    },
-  },
-  mounted() {
-    setTimeout(() => {
-      this.apexLoading = true;
-    });
   },
 };
 </script>
-
-<style src="./Informacoes.scss" lang="scss" />

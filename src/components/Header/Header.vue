@@ -104,22 +104,22 @@ export default {
     notifications: [
       {
         text: "Erros no link VIVO",
-        icon: "mdi-tag",
+        icon: "mdi-information-outline",
         color: "warning",
       },
       {
         text: "Provisionamento de endpoint",
-        icon: "mdi-thumb-up",
+        icon: "mdi-check",
         color: "success",
       },
       {
         text: "Provisionamento de endpoint",
-        icon: "mdi-flag",
+        icon: "mdi-information-outline",
         color: "error",
       },
       {
         text: "Provisionamento de endpoint",
-        icon: "mdi-cart",
+        icon: "mdi-check",
         color: "primary",
       },
     ],

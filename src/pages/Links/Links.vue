@@ -6,7 +6,7 @@
       </v-row>
       <v-row>
         <v-col cols="12">
-          <v-card class="support-requests mx-1 mb-1">
+          <v-card class="mx-1 mb-1">
             <v-card-title class="pa-6 pb-0">
               <p>Status dos Links</p>
               <v-spacer></v-spacer>
@@ -173,4 +173,4 @@ export default {
 };
 </script>
 
-<style src="./Links.scss" lang="scss" />
+/* <style src="./Links.scss" lang="scss" /> */
