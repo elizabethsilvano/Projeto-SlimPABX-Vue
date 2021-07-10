@@ -103,15 +103,16 @@ export default {
           icon: "mdi-book-variant-multiple",
           link: "/typography",
           children: [
-            { title: "Tarifação", link: "/icons" },
+            { title: "●  Tarifação", link: "/icons" },
             {
-              title: "Registros de chamadas",
-              link: "/charts",
+              title: "●  Registros de chamadas",
+              link: "/Graficos",
             },
             {
-              title: "Relatório de URA",
+              title: "●  Relatório de URA",
               link: "/maps",
             },
+            { title: "●  Gravações", link: "/icons" },
           ],
         },
         {
@@ -119,21 +120,39 @@ export default {
           icon: "mdi-grid-large",
           model: false,
           children: [
-            { title: "Gravações", link: "/icons" },
             {
-              title: "Ramais",
-              link: "/tables",
+              title: "●  Ramais",
+              link: "/Ramais",
             },
             {
-              title: "Agenda de Discagem",
+              title: "●  Agenda de Discagem",
+              link: "/Agenda",
+            },
+            {
+              title: "●  Filas",
+              link: "/Filas",
+            },
+            {
+              title: "●  Salas de Conferência",
+              link: "/maps",
+            },
+          ],
+        },
+        {
+          title: "Configurações Avançadas",
+          icon: "mdi-vector-combine",
+          model: false,
+          children: [
+            {
+              title: "●  Plano de Discagem",
               link: "/maps",
             },
             {
-              title: "Filas",
+              title: "●  Entrocamentos - IAX2",
               link: "/maps",
             },
             {
-              title: "Salas de Conferência",
+              title: "●  Entrocamentos - Agenda",
               link: "/maps",
             },
           ],
@@ -145,60 +164,15 @@ export default {
           model: false,
           children: [
             {
-              title: "Usuários do Sistema",
+              title: "●  Usuários do Sistema",
               link: "/icons",
             },
             {
-              title: "Grupos e Usuários",
-              link: "/charts",
+              title: "●  Grupos e Usuários",
+              link: "/Graficos",
             },
             {
-              title: "Permissões",
-              link: "/maps",
-            },
-          ],
-        },
-        { divider: true },
-        { heading: "Configurações" },
-        {
-          title: "Configurações Avançadas",
-          icon: "mdi-vector-combine",
-          model: false,
-          children: [
-            {
-              title: "Ramais Monitorados BLF",
-              link: "/icons",
-            },
-            {
-              title: "Encerrar Conexões de Ramal",
-              link: "/charts",
-            },
-            {
-              title: "Plano de Discagem",
-              link: "/maps",
-            },
-            {
-              title: "Entrocamentos - IAX2",
-              link: "/maps",
-            },
-            {
-              title: "Entrocamentos - Agenda",
-              link: "/maps",
-            },
-          ],
-        },
-        {
-          title: "Configurações do PABX",
-          icon: "mdi-vector-square",
-          model: false,
-          children: [
-            { title: "Gravações", link: "/icons" },
-            {
-              title: "Equipamentos",
-              link: "/charts",
-            },
-            {
-              title: "Bloqueio de chamadas",
+              title: "●  Permissões",
               link: "/maps",
             },
           ],
@@ -213,7 +187,7 @@ export default {
         },
         {
           title: "Histórico do Sistema",
-          icon: " mdi-vector-difference",
+          icon: "mdi-vector-difference",
           color: "warning",
         },
         {
@@ -226,7 +200,7 @@ export default {
           title: "Gráficos do Sistema",
           icon: "mdi-vector-polyline",
           color: "pink",
-          link: "/Charts",
+          link: "/Graficos",
         },
         {
           title: "Informações do servidor",
@@ -257,4 +231,4 @@ export default {
 };
 </script>
 
-<style src="./Sidebar.scss" lang="scss" />
+<style src="./Menu.scss" lang="scss" />

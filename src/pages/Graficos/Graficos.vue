@@ -45,7 +45,7 @@
         <v-col cols="12" md="6">
           <v-card class="mx-1 mb-1">
             <v-card-title class="pa-6 pb-3">
-              <p>Carga do Sistema</p>
+              <p>Carga</p>
               <v-spacer></v-spacer>
               <v-menu>
                 <template v-slot:activator="{ on, attrs }">
@@ -66,12 +66,12 @@
             </v-card-title>
             <v-card-text class="pa-6 pt-0">
               <v-row no-gutters>
-                <v-col>
+                <v-col cols="12">
                   <ApexChart
-                    type="heatmap"
+                    type="area"
                     height="350"
-                    :options="heatMap.options"
-                    :series="heatMap.series"
+                    :options="apexArea.options"
+                    :series="apexArea.series"
                   ></ApexChart>
                 </v-col>
               </v-row>

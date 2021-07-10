@@ -30,14 +30,14 @@
                       <td>{{ item.interface }}</td>
                       <td>{{ item.sinal }}</td>
                       <td v-if="item.status === 'Sent'">
-                        <v-chip link color="success" class="ma-2 ml-0">
-                          Ok
-                        </v-chip>
+                        <v-icon style="font-size: 28px" link color="success"
+                          >mdi-check
+                        </v-icon>
                       </td>
                       <td v-else-if="item.status === 'Declined'">
-                        <v-chip link color="error" class="ma-2 ml-0">
-                          Down
-                        </v-chip>
+                        <v-icon style="font-size: 28px" link color="error"
+                          >mdi-alert-circle-outline
+                        </v-icon>
                       </td>
                     </tr>
                   </tbody>

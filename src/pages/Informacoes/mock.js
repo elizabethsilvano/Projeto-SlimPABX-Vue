@@ -8,7 +8,7 @@ export default {
     {
       id: 0,
       name: "Hostname",
-      type: "pabx.itflex.lan",
+      type: "slimpabx.lan",
     },
     {
       id: 1,

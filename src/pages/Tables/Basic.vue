@@ -3,7 +3,7 @@
     <v-row no-gutters class="d-flex justify-space-between mt-10 mb-6">
       <h1 class="page-title">Gerenciamento de Ramais</h1>
       <v-menu offset-y>
-        <template v-slot:activator="{ on, attrs }">
+        <template v-slot:activator="{ on }">
           <v-btn
             v-bind="attrs"
             v-on="on"
@@ -14,9 +14,6 @@
         </template>
         <v-list>
           <v-list-item link v-for="(item, index) in lastReports" :key="index">
-            <v-list-item-icon>
-              <v-icon v-text="item.icon"></v-icon>
-            </v-list-item-icon>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
@@ -40,7 +37,6 @@
             v-model="mock.employeeTable.selected"
             :headers="mock.employeeTable.headers"
             :items="mock.employeeTable.employee"
-            :search="mock.employeeTable.search"
             item-key="name"
             show-select
           >

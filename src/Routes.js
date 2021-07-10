@@ -7,12 +7,14 @@ import Layout from "@/components/Layout/Layout";
 import Dashboard from "@/pages/Dashboard/Dashboard";
 import Links from "@/pages/Links/Links";
 import Status from "@/pages/Status/Status";
+import Ramais from "@/pages/Ramais/Ramais";
+import Agenda from "@/pages/Agenda/Agenda";
+import Filas from "@/pages/Filas/Filas";
 import Typography from "@/pages/Typography/Typography";
 import Informacoes from "@/pages/Informacoes/Informacoes";
 import Tables from "@/pages/Tables/Basic";
-import Notifications from "@/pages/Notifications/Notifications";
 import Icons from "@/pages/Icons/Icons";
-import Charts from "@/pages/Charts/Charts";
+import Graficos from "@/pages/Graficos/Graficos";
 import Error from "@/pages/Error/Error";
 import Login from "@/pages/Login/Login";
 
@@ -47,6 +49,16 @@ export default new Router({
           component: Status,
         },
         {
+          path: "Ramais",
+          name: "Ramais",
+          component: Ramais,
+        },
+        {
+          path: "Filas",
+          name: "Filas",
+          component: Filas,
+        },
+        {
           path: "typography",
           name: "Typography",
           component: Typography,
@@ -57,14 +69,14 @@ export default new Router({
           component: Informacoes,
         },
         {
+          path: "Agenda",
+          name: "Agenda",
+          component: Agenda,
+        },
+        {
           path: "tables",
           name: "Tables",
           component: Tables,
-        },
-        {
-          path: "notifications",
-          name: "Notifications",
-          component: Notifications,
         },
         {
           path: "icons",
@@ -72,9 +84,9 @@ export default new Router({
           component: Icons,
         },
         {
-          path: "charts",
-          name: "Charts",
-          component: Charts,
+          path: "Graficos",
+          name: "Graficos",
+          component: Graficos,
         },
       ],
     },

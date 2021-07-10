@@ -22,18 +22,18 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr v-for="item in mock.table" :key="item.name">
+                    <tr v-for="item in table" :key="item.name">
                       <td class="pa-6">{{ item.name }}</td>
                       <td>{{ item.type }}</td>
                       <td v-if="item.status === 'Sent'">
-                        <v-chip link color="success" class="ma-2 ml-0">
-                          Ok
-                        </v-chip>
+                        <v-icon style="font-size: 28px" link color="success"
+                          >mdi-check
+                        </v-icon>
                       </td>
                       <td v-else-if="item.status === 'Declined'">
-                        <v-chip link color="error" class="ma-2 ml-0">
-                          Down
-                        </v-chip>
+                        <v-icon style="font-size: 28px" link color="error"
+                          >mdi-alert-circle-outline
+                        </v-icon>
                       </td>
                     </tr>
                   </tbody>
@@ -48,48 +48,48 @@
 </template>
 
 <script>
-import mock from "./mock";
-
 export default {
-  name: "Dashboard",
-  components: {},
   data() {
     return {
-      mock,
-      apexLoading: false,
-      value: this.getRandomInt(10, 90),
-      value2: this.getRandomInt(10, 90),
-      mainApexAreaSelect: "Diário",
+      table: [
+        {
+          id: 0,
+          name: "Portabilidade BD Local ",
+          type: "Local",
+          status: "Sent",
+        },
+        {
+          id: 1,
+          name: "Rede - Conectividade com a Internet",
+          type: "Local",
+          status: "Sent",
+        },
+        {
+          id: 1,
+          name: "Serviço - PABX",
+          type: "Local",
+          status: "Sent",
+        },
+        {
+          id: 1,
+          name: "Serviço - Khomp",
+          type: "Local",
+          status: "Sent",
+        },
+        {
+          id: 1,
+          name: "Serviço - Compartilhamento de Arquivos (Samba)",
+          type: "Local",
+          status: "Sent",
+        },
+        {
+          id: 3,
+          name: "Serviço - Banco de Dados (MySQL)",
+          type: "Local",
+          status: "Declined",
+        },
+      ],
     };
-  },
-  methods: {
-    getRandomDataForTrends() {
-      const arr = [];
-      for (let i = 0; i < 12; i += 1) {
-        arr.push(Math.random().toFixed(1) * 10);
-      }
-      return arr;
-    },
-    generatePieSeries() {
-      let series = [];
-
-      for (let i = 0; i < 4; i++) {
-        let y = Math.floor(Math.random() * (500 - 100 + 100)) + 100;
-        series.push(y);
-      }
-      return series;
-    },
-    getRandomInt(min, max) {
-      let rand = min - 0.5 + Math.random() * (max - min + 1);
-      return Math.round(rand);
-    },
-  },
-  mounted() {
-    setTimeout(() => {
-      this.apexLoading = true;
-    });
   },
 };
 </script>
-
-<style src="./Status.scss" lang="scss" />
