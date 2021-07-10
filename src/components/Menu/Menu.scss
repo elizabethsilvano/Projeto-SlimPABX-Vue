@@ -1,8 +1,8 @@
 @import "src/styles/variables";
 
 .v-navigation-drawer {
-  top: 64px!important;
-  height: calc(100vh - 64px)!important;
+  top: 64px !important;
+  height: calc(100vh - 64px) !important;
 
   .v-navigation-drawer__content {
     &::-webkit-scrollbar {
@@ -25,14 +25,15 @@
   .v-list-item--active {
     .v-list-item__content {
       .v-list-item__title {
-        color: $title-grey!important;
+        color: $title-grey !important;
       }
     }
   }
 
   &.drawer-mini {
     .v-list {
-      div, a {
+      div,
+      a {
         &.v-list-item {
           color: $text-color;
           transition: 300ms all;
@@ -42,7 +43,8 @@
     }
   }
   .v-list {
-    div, a {
+    div,
+    a {
       &.v-list-item {
         padding-left: $drawer-items-padding;
       }
@@ -67,5 +69,3 @@
 .v-navigation-drawer--temporary.v-navigation-drawer--clipped {
   z-index: 5;
 }
-
-

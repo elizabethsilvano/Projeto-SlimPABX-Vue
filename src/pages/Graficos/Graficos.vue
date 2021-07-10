@@ -9,7 +9,7 @@
         <v-col cols="12" md="6">
           <v-card class="mx-1 mb-1">
             <v-card-title class="pa-6 pb-3">
-              <p>Apex Line Chart</p>
+              <p>Processador</p>
               <v-spacer></v-spacer>
               <v-menu>
                 <template v-slot:activator="{ on, attrs }">
@@ -45,7 +45,7 @@
         <v-col cols="12" md="6">
           <v-card class="mx-1 mb-1">
             <v-card-title class="pa-6 pb-3">
-              <p>Apex Heatmap Chart</p>
+              <p>Carga</p>
               <v-spacer></v-spacer>
               <v-menu>
                 <template v-slot:activator="{ on, attrs }">
@@ -66,12 +66,12 @@
             </v-card-title>
             <v-card-text class="pa-6 pt-0">
               <v-row no-gutters>
-                <v-col>
+                <v-col cols="12">
                   <ApexChart
-                    type="heatmap"
+                    type="area"
                     height="350"
-                    :options="heatMap.options"
-                    :series="heatMap.series"
+                    :options="apexArea.options"
+                    :series="apexArea.series"
                   ></ApexChart>
                 </v-col>
               </v-row>
@@ -81,7 +81,7 @@
         <v-col cols="12" md="6">
           <v-card class="mx-1 mb-1">
             <v-card-title class="pa-6 pb-3">
-              <p>Apex Dashed Line Chart</p>
+              <p>Memória</p>
               <v-spacer></v-spacer>
               <v-menu>
                 <template v-slot:activator="{ on, attrs }">
@@ -117,7 +117,7 @@
         <v-col cols="12" md="6">
           <v-card class="mx-1 mb-1">
             <v-card-title class="pa-6 pb-3">
-              <p>Apex Pie Chart</p>
+              <p>Disco</p>
               <v-spacer></v-spacer>
               <v-menu>
                 <template v-slot:activator="{ on, attrs }">
@@ -166,7 +166,12 @@ export default {
   },
   data() {
     return {
-      menu: ["Edit", "Copy", "Delete", "Print"],
+      menu: [
+        "Ultima hora",
+        "últimas 24 horas",
+        "Últimos 7 dias",
+        "Últimos 30 dias",
+      ],
       apexArea: {
         options: {
           chart: {

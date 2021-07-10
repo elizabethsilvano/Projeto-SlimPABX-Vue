@@ -1,12 +1,12 @@
 @import "../../styles/app";
 
 .error-page {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $primary;
+  background-color: white;
   .logo-wrapper {
     align-items: center;
     margin-bottom: 30px;
@@ -21,14 +21,14 @@
     padding: 0 50px;
     background-color: white;
     border-radius: 4px;
-    height: 680px;
+    height: 300px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
     .error-logo {
-      color: $primary;
+      color: white;
       font-size: 148px;
       font-weight: 600;
     }

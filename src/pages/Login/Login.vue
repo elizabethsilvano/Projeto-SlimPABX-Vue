@@ -4,8 +4,7 @@
       <v-row no-gutters>
         <v-col cols="5" class="main-part d-none d-md-none d-lg-flex">
           <div class="d-flex">
-            <v-img src="@/assets/logo.svg" contain></v-img>
-            <p>Slim PABX</p>
+            <v-img src="@/assets/logo1.png" contain></v-img>
           </div>
         </v-col>
         <v-col>
