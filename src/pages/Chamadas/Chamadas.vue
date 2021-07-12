@@ -73,7 +73,7 @@
       <v-col class="d-flex" cols="12" sm="3">
         <v-autocomplete
           v-model="value"
-          :items="mock.employeeTable.ramais"
+          :items="mock.employeeTable.agrupar"
           dense
           filled
           label="Agrupar por::"
@@ -84,7 +84,7 @@
       <v-col class="d-flex" cols="12" sm="3">
         <v-autocomplete
           v-model="value"
-          :items="mock.employeeTable.ramais"
+          :items="mock.employeeTable.agrupar"
           dense
           filled
           label="Consolidar por:"

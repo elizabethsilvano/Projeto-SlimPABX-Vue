@@ -204,6 +204,7 @@ export default {
       value: this.getRandomInt(10, 90),
       value2: this.getRandomInt(10, 90),
       mainApexAreaSelect: "Diário",
+      modal2: false,
     };
   },
   methods: {

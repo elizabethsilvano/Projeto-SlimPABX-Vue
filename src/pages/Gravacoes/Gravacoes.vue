@@ -183,7 +183,7 @@ export default {
   data: () => ({
     dialog: false,
     grupo: ["Suporte", "Comercial", "RH", "Vendas"],
-
+    modal2: false,
     headers: [
       { text: "Data", value: "data" },
       { text: "Origem", value: "origem" },
