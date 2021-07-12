@@ -103,21 +103,21 @@ export default {
           icon: "mdi-book-variant-multiple",
           link: "/typography",
           children: [
-            { title: "●  Tarifação", link: "/icons" },
+            { title: "●  Tarifação", link: "/Tarifa" },
             {
               title: "●  Registros de chamadas",
-              link: "/Graficos",
+              link: "/Chamadas",
             },
             {
               title: "●  Relatório de URA",
-              link: "/maps",
+              link: "/URA2",
             },
-            { title: "●  Gravações", link: "/icons" },
+            { title: "●  Gravações", link: "/Gravacoes" },
           ],
         },
         {
           title: "Gerenciamento",
-          icon: "mdi-grid-large",
+          icon: "mdi-phone-log",
           model: false,
           children: [
             {
@@ -125,7 +125,7 @@ export default {
               link: "/Ramais",
             },
             {
-              title: "●  Agenda de Discagem",
+              title: "●  Bloqueio de Chamadas",
               link: "/Agenda",
             },
             {
@@ -134,26 +134,38 @@ export default {
             },
             {
               title: "●  Salas de Conferência",
-              link: "/maps",
+              link: "/Salas",
+            },
+            {
+              title: "●  Agendamento de Conferência",
+              link: "/Agendas",
+            },
+            {
+              title: "●  Permissões",
+              link: "/Permissoes",
             },
           ],
         },
         {
           title: "Configurações Avançadas",
-          icon: "mdi-vector-combine",
+          icon: "mdi-cog-outline",
           model: false,
           children: [
             {
-              title: "●  Plano de Discagem",
-              link: "/maps",
+              title: "●  Rotas de Saída - Fixo",
+              link: "/Rotas1",
             },
             {
-              title: "●  Entrocamentos - IAX2",
-              link: "/maps",
+              title: "●  Rotas de Saída - Celular",
+              link: "/Rotas2",
             },
             {
-              title: "●  Entrocamentos - Agenda",
-              link: "/maps",
+              title: "●  Rotas de Saída - Internacional",
+              link: "/Rotas3",
+            },
+            {
+              title: "●  Rotas de Saída - Especiais",
+              link: "/Rotas4",
             },
           ],
         },
@@ -165,15 +177,11 @@ export default {
           children: [
             {
               title: "●  Usuários do Sistema",
-              link: "/icons",
+              link: "/Usuarios",
             },
             {
-              title: "●  Grupos e Usuários",
-              link: "/Graficos",
-            },
-            {
-              title: "●  Permissões",
-              link: "/maps",
+              title: "●  Grupos de Usuários",
+              link: "/Grupos",
             },
           ],
         },
@@ -186,12 +194,7 @@ export default {
           link: "/Links",
         },
         {
-          title: "Histórico do Sistema",
-          icon: "mdi-vector-difference",
-          color: "warning",
-        },
-        {
-          title: "Status do Sistema",
+          title: "Status dos Serviços",
           icon: "mdi-check",
           color: "primary",
           link: "/Status",
