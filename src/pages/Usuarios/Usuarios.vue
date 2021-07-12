@@ -1,11 +1,11 @@
 <template>
   <v-container fluid>
     <v-row no-gutters class="d-flex justify-space-between mt-10 mb-6">
-      <h1 class="page-title">Gerenciamento de Filas</h1>
+      <h1 class="page-title">Usuários do Sistema</h1>
       <v-dialog v-model="dialog" max-width="500px">
         <template v-slot:activator="{ on, attrs }">
           <v-btn color="primary" dark class="mb-2" v-bind="attrs" v-on="on">
-            Nova Fila
+            Novo Usuário
           </v-btn>
         </template>
         <v-card>
@@ -21,43 +21,16 @@
                   label="Nome"
                   required
                 ></v-text-field>
-                <v-combobox
-                  v-model="model"
-                  :items="ramais"
-                  :search-input.sync="search"
-                  hide-selected
-                  label="RAMAIS"
-                  multiple
-                  persistent-hint
-                  small-chips
-                >
-                </v-combobox>
-                <v-select
-                  v-model="select"
-                  :items="strategy"
-                  :rules="[(v) => !!v || 'Selecione o tipo de distribuição']"
-                  label="Distribuição"
+                <v-text-field
+                  v-model="fila"
+                  label="Senha"
                   required
-                ></v-select>
+                ></v-text-field>
                 <v-select
                   v-model="select"
                   :items="grupo"
                   :rules="[(v) => !!v || 'Selecione um grupo']"
                   label="GRUPO"
-                  required
-                ></v-select>
-                <v-select
-                  v-model="select"
-                  :items="contexto"
-                  :rules="[(v) => !!v || 'Selecione um contexto']"
-                  label="CONTEXTO"
-                  required
-                ></v-select>
-                <v-select
-                  v-model="select"
-                  :items="audio"
-                  :rules="[(v) => !!v || 'Selecione o áudio']"
-                  label="ÁUDIO"
                   required
                 ></v-select>
               </v-form>
@@ -79,23 +52,7 @@
         </v-card>
       </v-dialog>
     </v-row>
-    <template>
-      <v-card color="grey lighten-4" flat height="60px" tile>
-        <v-toolbar dense>
-          <v-spacer></v-spacer>
-          <v-card-title class="pa-1 pb-0">
-            <v-spacer></v-spacer>
-            <v-text-field
-              append-icon="mdi-magnify"
-              label="Pesquisar"
-              clearable
-              single-line
-              hide-details
-            ></v-text-field>
-          </v-card-title>
-        </v-toolbar>
-      </v-card>
-    </template>
+
     <v-data-table
       :headers="headers"
       :items="desserts"
@@ -141,43 +98,31 @@ export default {
   data: () => ({
     dialog: false,
     dialogDelete: false,
-    permissao: ["Liberado", "Bloqueado"],
-    tipo: ["SIP", "Virtual", "IAX"],
     grupo: ["Suporte", "Comercial", "RH", "Vendas"],
-    ramais: ["1000", "1001", "1002", "1003"],
-    contexto: ["discagem-ramais", "portaria", "atendimento", "suporte"],
-    audio: ["Áudio 1", "Áudio 2", "Áudio 3", "Áudio 4"],
-    strategy: [
-      "Rrmemory ",
-      "Ringall",
-      "Roundrobin",
-      "Leastrecent",
-      "Fewestcalls",
-      "Random",
-    ],
+
     headers: [
-      { text: "Código", value: "id" },
-      { text: "Fila", value: "fila" },
+      { text: "Nome", value: "nome" },
+      { text: "Senha", value: "senha" },
       { text: "Grupo", value: "grupo" },
       { text: "Ações", value: "actions", sortable: false },
     ],
     desserts: [],
     editedIndex: -1,
     editedItem: {
-      id: "",
-      fila: "",
+      nome: "",
+      senha: "",
       grupo: "",
     },
     defaultItem: {
-      id: "",
-      fila: "",
+      nome: "",
+      senha: "",
       grupo: "",
     },
   }),
 
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? "Nova Fila" : "Editar Fila";
+      return this.editedIndex === -1 ? "Novo Usuário" : "Editar Usuário";
     },
   },
 
@@ -198,54 +143,19 @@ export default {
     initialize() {
       this.desserts = [
         {
-          id: 0,
-          fila: "Comercial",
-          grupo: "Grupo 1",
+          nome: "Larissa",
+          senha: "1234",
+          grupo: "Suporte",
         },
         {
-          id: 2,
-          fila: "Suporte",
-          grupo: "Grupo 2",
+          nome: "Pedro",
+          senha: "1234",
+          grupo: "RH",
         },
         {
-          id: 3,
-          fila: "Suporte",
-          grupo: "Grupo 2",
-        },
-        {
-          id: 4,
-          fila: "RH",
-          grupo: "Grupo 3",
-        },
-        {
-          id: 5,
-          fila: "Comercial",
-          grupo: "Grupo 3",
-        },
-        {
-          id: 6,
-          fila: "Suporte 2",
-          grupo: "Grupo 3",
-        },
-        {
-          id: 7,
-          fila: "Suporte 3",
-          grupo: "Grupo 4",
-        },
-        {
-          id: 8,
-          fila: "Atendimento",
-          grupo: "Grupo 5",
-        },
-        {
-          id: 9,
-          fila: "Atendimento 2",
-          grupo: "Grupo 2",
-        },
-        {
-          id: 10,
-          fila: "Atendimento 3",
-          grupo: "Grupo 7",
+          nome: "Gustavo",
+          senha: "1234",
+          grupo: "Atendimento",
         },
       ];
     },

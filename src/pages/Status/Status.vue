@@ -2,7 +2,7 @@
   <v-container fluid>
     <div class="dashboard-page">
       <v-row no-gutters class="d-flex justify-space-between mt-10 mb-6">
-        <h1 class="page-title">Status do Sistema</h1>
+        <h1 class="page-title">Status dos Serviços</h1>
       </v-row>
       <v-row>
         <v-col cols="12">
