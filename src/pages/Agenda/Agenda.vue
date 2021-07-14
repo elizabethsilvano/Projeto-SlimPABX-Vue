@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row no-gutters class="d-flex justify-space-between mt-10 mb-6">
-      <h1 class="page-title">Agenda de Discagem</h1>
+      <h1 class="page-title">Bloqueio de Chamadas</h1>
       <v-dialog v-model="dialog" max-width="500px">
         <template v-slot:activator="{ on, attrs }">
           <v-btn color="primary" dark class="mb-2" v-bind="attrs" v-on="on">
