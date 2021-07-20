@@ -24,8 +24,8 @@
                 <v-select
                   v-model="select"
                   :items="grupo"
-                  :rules="[(v) => !!v || 'Selecione um grupo']"
-                  label="GRUPO"
+                  :rules="[(v) => !!v || 'Selecione os Usuários']"
+                  label="USUÁRIOS"
                   required
                 ></v-select>
               </v-form>
@@ -114,7 +114,7 @@ export default {
 
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? "Novo Usuário" : "Editar Usuário";
+      return this.editedIndex === -1 ? "Novo Grupo" : "Editar Usuário";
     },
   },
 

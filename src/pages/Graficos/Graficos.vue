@@ -28,14 +28,14 @@
                 </v-list>
               </v-menu>
             </v-card-title>
-            <v-card-text class="pa-6 pt-0">
+            <v-card-text class="pa-6 pt-0 pb-0">
               <v-row no-gutters>
-                <v-col cols="12">
+                <v-col cols="12" class="my-auto">
                   <ApexChart
-                    type="area"
+                    type="line"
                     height="350"
-                    :options="apexArea.options"
-                    :series="apexArea.series"
+                    :options="apexLines.options"
+                    :series="apexLines.series"
                   ></ApexChart>
                 </v-col>
               </v-row>
@@ -64,14 +64,14 @@
                 </v-list>
               </v-menu>
             </v-card-title>
-            <v-card-text class="pa-6 pt-0">
+            <v-card-text class="pa-6 pt-0 pb-0">
               <v-row no-gutters>
-                <v-col cols="12">
+                <v-col cols="12" class="my-auto">
                   <ApexChart
-                    type="area"
+                    type="line"
                     height="350"
-                    :options="apexArea.options"
-                    :series="apexArea.series"
+                    :options="apexLines.options"
+                    :series="apexLines.series"
                   ></ApexChart>
                 </v-col>
               </v-row>
