@@ -108,7 +108,7 @@
           <v-dialog v-model="dialogDelete" max-width="500px">
             <v-card>
               <v-card-title class="text-h5"
-                >Tem certeza de que deseja excluir este item?</v-card-title
+                >Deseja excluir este item?</v-card-title
               >
               <v-card-actions>
                 <v-spacer></v-spacer>
@@ -128,8 +128,11 @@
         <v-icon small class="mr-2" @click="editItem(item)">
           mdi-pencil
         </v-icon>
-        <v-icon small @click="deleteItem(item)">
+        <v-icon small class="mr-2" @click="deleteItem(item)">
           mdi-delete
+        </v-icon>
+        <v-icon @click="undo(item)">
+          mdi-undo
         </v-icon>
       </template>
     </v-data-table>
@@ -293,6 +296,12 @@ export default {
     },
     resetValidation() {
       this.$refs.editedItem.resetValidation();
+    },
+    undo: function() {
+      if (this.canUndo) {
+        this.editedIndex -= 1;
+        this.desserts = this.history[this.editedIndex];
+      }
     },
   },
 };

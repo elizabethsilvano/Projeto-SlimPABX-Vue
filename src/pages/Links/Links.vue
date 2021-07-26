@@ -38,6 +38,7 @@
                         <v-icon style="font-size: 28px" link color="error"
                           >mdi-alert-circle-outline
                         </v-icon>
+                        Clique aqui para mais informações
                       </td>
                     </tr>
                   </tbody>

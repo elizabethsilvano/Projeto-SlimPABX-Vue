@@ -42,10 +42,10 @@
             <v-btn color="warning" @click="resetValidation">
               Limpar
             </v-btn>
-            <v-btn color="error" class="mr-4" @click="close">
+            <v-btn color="error" class="mr-2" @click="close">
               Cancelar
             </v-btn>
-            <v-btn color="success" class="mr-4" @click="save">
+            <v-btn color="success" @click="save">
               Salvar
             </v-btn>
           </v-card-actions>
@@ -101,8 +101,11 @@
         <v-icon small class="mr-2" @click="editItem(item)">
           mdi-pencil
         </v-icon>
-        <v-icon small @click="deleteItem(item)">
+        <v-icon small class="mr-2" @click="deleteItem(item)">
           mdi-delete
+        </v-icon>
+        <v-icon @click="undo(item)">
+          mdi-undo
         </v-icon>
       </template>
     </v-data-table>
