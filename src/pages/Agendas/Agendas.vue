@@ -142,6 +142,10 @@
 </template>
 
 <script>
+import Vue from "vue";
+import VueSweetalert2 from "vue-sweetalert2";
+
+Vue.use(VueSweetalert2);
 export default {
   data: () => ({
     dialog: false,
@@ -270,9 +274,10 @@ export default {
     alertDisplay() {
       this.$swal({
         title: "Deseja excluir esta agenda?",
-        text: "A agendaserá excluída do banco de dados",
+        text: "A agenda será excluída do banco de dados",
         type: "warning",
         showCancelButton: true,
+        showUndoButton: true,
         confirmButtonColor: "#3CD4A0",
         cancelButtonColor: "#E53935",
         confirmButtonText: "Sim, excluir!",
