@@ -11,6 +11,7 @@ export default {
       "Mês Atual",
       "Mês Anterior",
     ],
+    agrupar: ["Ramal", "Centro de Custo", "Origem/Destino", "Status"],
     hora: [
       "1:00",
       "2:00",

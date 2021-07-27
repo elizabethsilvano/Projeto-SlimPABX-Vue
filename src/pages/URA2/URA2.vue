@@ -142,9 +142,14 @@
         </v-col>
       </v-row>
       <v-row no-gutters class="d-flex justify-space-between mt-10 mb-6">
-        <v-btn color="primary" class="text-capitalize button-shadow"
-          >Aplicar</v-btn
-        >
+        <v-card-actions>
+          <v-btn color="warning" @click="resetValidation">
+            Limpar
+          </v-btn>
+          <v-btn color="success" @click="save">
+            Pesquisar
+          </v-btn>
+        </v-card-actions>
       </v-row>
       <v-row>
         <v-col class="d-flex" cols="12" sm="6">
@@ -204,6 +209,7 @@ export default {
       value: this.getRandomInt(10, 90),
       value2: this.getRandomInt(10, 90),
       mainApexAreaSelect: "Diário",
+      modal2: false,
     };
   },
   methods: {

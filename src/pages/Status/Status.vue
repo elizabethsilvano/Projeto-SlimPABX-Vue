@@ -31,9 +31,14 @@
                         </v-icon>
                       </td>
                       <td v-else-if="item.status === 'Declined'">
-                        <v-icon style="font-size: 28px" link color="error"
+                        <v-icon
+                          style="font-size: 28px"
+                          link
+                          color="error"
+                          v-on:click="showAlert"
                           >mdi-alert-circle-outline
                         </v-icon>
+                        Clique aqui para mais informações
                       </td>
                     </tr>
                   </tbody>
@@ -48,6 +53,11 @@
 </template>
 
 <script>
+import Vue from "vue";
+import VueSweetalert2 from "vue-sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
+
+Vue.use(VueSweetalert2);
 export default {
   data() {
     return {
@@ -90,6 +100,17 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    showAlert() {
+      this.$swal.fire({
+        icon: "warning",
+        text:
+          "Limpe os erros e aguarde para verificar se voltam a ocorrer. Caso persistam, entre em contato com a equipe de suporte.",
+        confirmButtonText: "Limpar",
+        confirmButtonColor: "#FFC260",
+      });
+    },
   },
 };
 </script>

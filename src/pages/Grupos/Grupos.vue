@@ -24,8 +24,8 @@
                 <v-select
                   v-model="select"
                   :items="grupo"
-                  :rules="[(v) => !!v || 'Selecione um grupo']"
-                  label="GRUPO"
+                  :rules="[(v) => !!v || 'Selecione os Usuários']"
+                  label="USUÁRIOS"
                   required
                 ></v-select>
               </v-form>
@@ -80,8 +80,11 @@
         <v-icon small class="mr-2" @click="editItem(item)">
           mdi-pencil
         </v-icon>
-        <v-icon small @click="deleteItem(item)">
+        <v-icon small class="mr-2" @click="deleteItem(item)">
           mdi-delete
+        </v-icon>
+        <v-icon @click="undo(item)">
+          mdi-undo
         </v-icon>
       </template>
     </v-data-table>
@@ -114,7 +117,7 @@ export default {
 
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? "Novo Usuário" : "Editar Usuário";
+      return this.editedIndex === -1 ? "Novo Grupo" : "Editar Usuário";
     },
   },
 
