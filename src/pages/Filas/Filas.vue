@@ -128,7 +128,7 @@
         <v-icon small class="mr-2" @click="editItem(item)">
           mdi-pencil
         </v-icon>
-        <v-icon small class="mr-2" @click="deleteItem(item)">
+        <v-icon small class="mr-2" v-on:click="alertDisplay">
           mdi-delete
         </v-icon>
         <v-icon @click="undo(item)">
@@ -302,6 +302,23 @@ export default {
         this.editedIndex -= 1;
         this.desserts = this.history[this.editedIndex];
       }
+    },
+    alertDisplay() {
+      this.$swal({
+        title: "Deseja excluir esta fila?",
+        text: "A fila será excluído do banco de dados",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3CD4A0",
+        cancelButtonColor: "#E53935",
+        confirmButtonText: "Sim, excluir!",
+      }).then((result) => {
+        if (result.value) {
+          this.$swal("Excluído", "Fila excluída com sucesso!", "success");
+        } else {
+          this.$swal("Exclusão Cancelada!");
+        }
+      });
     },
   },
 };
