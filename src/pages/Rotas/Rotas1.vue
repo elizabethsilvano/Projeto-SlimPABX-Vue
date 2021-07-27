@@ -32,9 +32,7 @@
             </v-card-text>
           </v-card>
           <v-row no-gutters class="mt-10 mb-6 justify-right">
-            <v-btn color="primary" class="text-capitalize button-shadow"
-              >Aplicar</v-btn
-            >
+            <v-btn color="primary" @click="showAlert">Aplicar</v-btn>
           </v-row>
         </v-col>
       </v-row>
@@ -51,6 +49,16 @@ export default {
       mock,
       grupo: ["Padrão", "GSM", "PASTN", "VIVO", "HANGUP"],
     };
+  },
+  methods: {
+    showAlert() {
+      this.$swal.fire({
+        icon: "success",
+        text: "Regra aplicada com sucesso!",
+        confirmButtonText: "Ok",
+        confirmButtonColor: "#41b882",
+      });
+    },
   },
 };
 </script>
