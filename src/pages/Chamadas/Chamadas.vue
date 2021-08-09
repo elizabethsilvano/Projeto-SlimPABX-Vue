@@ -107,6 +107,16 @@
           hide-details
         ></v-switch>
       </v-col>
+      <v-col cols="12" md="3">
+        <v-btn class="ma-2" color="primary" dark>
+          <v-icon dark>mdi-cloud-download</v-icon>
+          Gerar PDF
+        </v-btn>
+        <v-btn class="ma-2" color="primary" dark>
+          <v-icon dark>mdi-cloud-download</v-icon>
+          Gerar CSV
+        </v-btn>
+      </v-col>
     </v-row>
     <v-row no-gutters class="d-flex justify-space-between mt-10 mb-6">
       <v-card-actions>
