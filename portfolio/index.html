@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elizabeth Silvano - Frontend Engineer especializada em Vue.js, React e Angular">
+    <meta name="author" content="Elizabeth Silvano">
+    <title>Elizabeth Silvano | Frontend Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">ES<span>.</span></a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#experience" class="nav-link">Experiência</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Olá, eu sou</p>
+                    <h1 class="hero-title">Elizabeth Silvano</h1>
+                    <h2 class="hero-subtitle">Frontend Engineer</h2>
+                    <p class="hero-description">
+                        Especialista em <span class="highlight">Vue.js</span>, <span class="highlight">React</span> e <span class="highlight">Angular</span>
+                        com mais de 4 anos transformando ideias em interfaces digitais de alto impacto.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/elizabeth-silvano" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/elizabethsilvano" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:elizabeth.tj@hotmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="floating-tech">
+                            <span class="tech-badge vue">Vue.js</span>
+                            <span class="tech-badge react">React</span>
+                            <span class="tech-badge angular">Angular</span>
+                            <span class="tech-badge js">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="lead">
+                        Engenheira de Software Frontend com <strong>+4 anos de experiência</strong> no desenvolvimento 
+                        de aplicações web escaláveis e responsivas.
+                    </p>
+                    <p>
+                        Ao longo da minha carreira, atuei na criação de componentes reutilizáveis, integração de 
+                        sistemas críticos e otimização de performance, garantindo interfaces de alta qualidade 
+                        para milhares de usuários.
+                    </p>
+                    <p>
+                        Tenho experiência em ambientes ágeis, boas práticas de desenvolvimento (Clean Code, Design Patterns) 
+                        e colaboração entre times multidisciplinares (UX/UI, Backend e QA).
+                    </p>
+                    <p class="highlight-text">
+                        <i class="fas fa-quote-left"></i>
+                        Minha motivação é transformar ideias em soluções digitais que unam eficiência técnica 
+                        e ótima experiência do usuário.
+                        <i class="fas fa-quote-right"></i>
+                    </p>
+                    <div class="education">
+                        <h3><i class="fas fa-graduation-cap"></i> Formação</h3>
+                        <ul>
+                            <li>
+                                <strong>MBA em Engenharia de Software com IA</strong><br>
+                                Full Cycle • 2025 - 2026
+                            </li>
+                            <li>
+                                <strong>Bacharelado em Sistemas de Informação</strong><br>
+                                Instituto Federal Catarinense • 2018 - 2021
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3>4+</h3>
+                        <p>Anos de Experiência</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>10+</h3>
+                        <p>Projetos Desenvolvidos</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>1000+</h3>
+                        <p>Usuários Impactados</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>5+</h3>
+                        <p>Certificações</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Engenheira Frontend Pleno</h3>
+                            <span class="timeline-company">Conta Azul</span>
+                            <span class="timeline-date">Maio 2022 - Presente</span>
+                            <span class="timeline-location">Joinville, SC</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Desenvolvimento e manutenção de componentes reutilizáveis em <strong>Vue.js</strong> e <strong>AngularJS</strong> para a plataforma principal</li>
+                            <li>Integração de <strong>APIs RESTful</strong> para consumo de dados em tempo real em módulos críticos</li>
+                            <li>Colaboração com equipes de UX/UI e Backend no planejamento e implementação de novas funcionalidades</li>
+                            <li>Participação em code reviews, promovendo qualidade do código e Clean Code</li>
+                            <li>Otimização de performance de carregamento e resolução de débitos técnicos</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Vue.js</span>
+                            <span>AngularJS</span>
+                            <span>REST APIs</span>
+                            <span>Clean Code</span>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Desenvolvedora Frontend</h3>
+                            <span class="timeline-company">iTFLEX Tecnologia</span>
+                            <span class="timeline-date">Abril 2021 - Abril 2022</span>
+                            <span class="timeline-location">Joinville, SC</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Desenvolvimento de interfaces interativas e responsivas com <strong>Vue.js</strong>, HTML5, CSS3 e Bootstrap</li>
+                            <li>Implementação de gerenciamento de estado com <strong>Vuex</strong> para aplicações SPA complexas</li>
+                            <li>Integração com APIs RESTful para funcionalidades de front-end</li>
+                            <li>Adoção de Git e Gitflow para controle de versão e colaboração</li>
+                            <li>Contribuição para documentação de procedimentos e material de apoio</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Vue.js</span>
+                            <span>Vuex</span>
+                            <span>Bootstrap</span>
+                            <span>REST APIs</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Técnica de Suporte</h3>
+                            <span class="timeline-company">iTFLEX Tecnologia</span>
+                            <span class="timeline-date">Setembro 2020 - Abril 2021</span>
+                            <span class="timeline-location">Joinville, SC</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Suporte técnico focado em tecnologias <strong>Open Source</strong> (Linux, Apache, DNS, DHCP, LDAP)</li>
+                            <li>Desenvolvimento de scripts em <strong>Shell Script</strong>, <strong>Python</strong> e <strong>Ansible</strong> para automação</li>
+                            <li>Trabalho com ferramentas de monitoramento (Zabbix, Grafana)</li>
+                            <li>Configuração de firewall (IPTables/OpenVPN) e serviços de rede</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Linux</span>
+                            <span>Python</span>
+                            <span>Shell Script</span>
+                            <span>DevOps</span>
+                            <span>Ansible</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Desenvolvedora Frontend</h3>
+                            <span class="timeline-company">Fábrica de Software</span>
+                            <span class="timeline-date">Abril 2015 - Dezembro 2016</span>
+                            <span class="timeline-location">Araquari, SC</span>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Desenvolvimento de interfaces web com HTML5, CSS3, JavaScript (ES6+) e Semantic UI</li>
+                            <li>Participação em code reviews e aplicação de boas práticas</li>
+                            <li>Colaboração no desenvolvimento com Python/Django</li>
+                            <li>Criação de documentação técnica e manuais de usuário</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>JavaScript</span>
+                            <span>HTML5/CSS3</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/elizabethsilvano/Projeto-SlimPABX-Vue" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">Destaque</span>
+                        <h3>Slim PABX</h3>
+                        <p class="project-description">
+                            Sistema completo de gerenciamento de PABX desenvolvido com Vue.js. Inclui dashboard 
+                            interativo com gráficos em tempo real, gerenciamento de chamadas, agendas, filas, 
+                            gravações e relatórios analíticos.
+                        </p>
+                        <div class="project-features">
+                            <h4>Características Principais:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Dashboard com visualização de dados em tempo real</li>
+                                <li><i class="fas fa-check"></i> Sistema de gerenciamento de chamadas e filas</li>
+                                <li><i class="fas fa-check"></i> Integração com APIs RESTful</li>
+                                <li><i class="fas fa-check"></i> Gráficos interativos com ApexCharts e Highcharts</li>
+                                <li><i class="fas fa-check"></i> Interface responsiva com Vuetify</li>
+                                <li><i class="fas fa-check"></i> Gerenciamento de estado com Vuex</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span><i class="fab fa-vuejs"></i> Vue.js 2</span>
+                            <span><i class="fas fa-store"></i> Vuex</span>
+                            <span><i class="fas fa-palette"></i> Vuetify</span>
+                            <span><i class="fas fa-chart-line"></i> ApexCharts</span>
+                            <span><i class="fas fa-chart-bar"></i> Highcharts</span>
+                            <span><i class="fas fa-map"></i> Google Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/elizabethsilvano/Projeto-SlimPABX-Vue" target="_blank" class="btn-project">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Componentes Reutilizáveis - Conta Azul</h3>
+                        <p class="project-description">
+                            Desenvolvimento de biblioteca de componentes Vue.js reutilizáveis para a plataforma 
+                            Conta Azul, garantindo consistência visual e eficiência no desenvolvimento.
+                        </p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>TypeScript</span>
+                            <span>Storybook</span>
+                            <span>Jest</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Aplicações SPA - iTFLEX</h3>
+                        <p class="project-description">
+                            Desenvolvimento de Single Page Applications complexas com Vue.js e gerenciamento 
+                            de estado robusto utilizando Vuex.
+                        </p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Vuex</span>
+                            <span>Vue Router</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Habilidades Técnicas</h2>
+            <div class="skills-content">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon vue-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <h4>Vue.js</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="--skill-level: 95%"></div>
+                            </div>
+                            <span class="skill-percent">Avançado</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon react-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React.js</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="--skill-level: 85%"></div>
+                            </div>
+                            <span class="skill-percent">Avançado</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon angular-icon">
+                                <i class="fab fa-angular"></i>
+                            </div>
+                            <h4>Angular</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="--skill-level: 80%"></div>
+                            </div>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up">
+                    <h3><i class="fas fa-code"></i> Linguagens</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon js-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="--skill-level: 90%"></div>
+                            </div>
+                            <span class="skill-percent">Avançado</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon ts-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>TypeScript</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="--skill-level: 85%"></div>
+                            </div>
+                            <span class="skill-percent">Avançado</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon python-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" style="--skill-level: 75%"></div>
+                            </div>
+                            <span class="skill-percent">Intermediário</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up">
+                    <h3><i class="fas fa-tools"></i> Ferramentas & Tecnologias</h3>
+                    <div class="skills-tags">
+                        <span><i class="fab fa-git-alt"></i> Git / GitHub</span>
+                        <span><i class="fab fa-docker"></i> Docker</span>
+                        <span><i class="fas fa-vial"></i> Jest / Testing</span>
+                        <span><i class="fas fa-database"></i> SQL</span>
+                        <span><i class="fab fa-node-js"></i> Node.js</span>
+                        <span><i class="fas fa-server"></i> REST APIs</span>
+                        <span><i class="fas fa-paint-brush"></i> Vuetify</span>
+                        <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span><i class="fab fa-sass"></i> Sass/SCSS</span>
+                        <span><i class="fas fa-cube"></i> Webpack</span>
+                        <span><i class="fas fa-sitemap"></i> Vuex</span>
+                        <span><i class="fab fa-npm"></i> npm / yarn</span>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up">
+                    <h3><i class="fas fa-lightbulb"></i> Metodologias & Práticas</h3>
+                    <div class="skills-list">
+                        <div class="practice-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Clean Code</h4>
+                                <p>Código limpo, legível e manutenível</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Design Patterns</h4>
+                                <p>Padrões de projeto e arquitetura</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>TDD</h4>
+                                <p>Desenvolvimento orientado a testes</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Agile / Scrum</h4>
+                                <p>Metodologias ágeis e colaboração</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Code Review</h4>
+                                <p>Revisão e qualidade de código</p>
+                            </div>
+                        </div>
+                        <div class="practice-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Responsive Design</h4>
+                                <p>Interfaces adaptáveis e acessíveis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <p class="contact-intro">
+                        Estou aberta a novas oportunidades em projetos que valorizem inovação, 
+                        qualidade de código e impacto positivo. Vamos conversar!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:elizabeth.tj@hotmail.com">elizabeth.tj@hotmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/elizabeth-silvano" target="_blank">linkedin.com/in/elizabeth-silvano</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/elizabethsilvano" target="_blank">github.com/elizabethsilvano</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Localização</h4>
+                                <p>Santa Catarina, Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta" data-aos="fade-left">
+                    <div class="cta-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Pronto para colaborar?</h3>
+                        <p>
+                            Se você está procurando uma desenvolvedora frontend dedicada e apaixonada 
+                            por criar experiências digitais excepcionais, adoraria fazer parte do seu time!
+                        </p>
+                        <a href="mailto:elizabeth.tj@hotmail.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">ES<span>.</span></a>
+                    <p>Frontend Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#experience">Experiência</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/elizabeth-silvano" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/elizabethsilvano" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:elizabeth.tj@hotmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elizabeth Silvano. Desenvolvido com <i class="fas fa-heart"></i> e Vue.js</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
